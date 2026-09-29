@@ -10,10 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <main class="page-shell">
-    <div class="topline"><a class="wordmark" href="#top" aria-label="Pratham Grover home">PG<span>.</span></a><span class="availability"><i></i> OPEN TO LEARNING &amp; COLLABORATION</span></div>
+    <div class="topline"><a class="wordmark" href="#top" aria-label="Pratham Grover home">PG<span>.</span></a><div class="top-actions"><span class="availability"><i></i> OPEN TO CLUB OPPORTUNITIES</span><button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light theme"><span aria-hidden="true">☼</span> LIGHT MODE</button></div></div>
 
     <section class="portfolio-card" id="top" aria-labelledby="profile-name">
       <div class="card-glow" aria-hidden="true"></div>
@@ -22,7 +23,7 @@
         <div class="identity">
           <p class="eyebrow"><span class="eyebrow-mark">✳</span> COMPUTER SCIENCE · GHAZIABAD, INDIA</p>
           <h1 id="profile-name">Pratham<br class="mobile-break"> Grover<span class="period">.</span></h1>
-          <p class="headline">Cybersecurity enthusiast <span>·</span> Retro tech explorer</p>
+          <p class="headline">Cybersecurity enthusiast <span>·</span> Team-first tech leader</p>
         </div>
         <div class="index-label">PROFILE<br><strong>2026</strong></div>
       </header>
@@ -34,7 +35,7 @@
           <p class="section-label" id="about-heading"><span>01</span> A LITTLE ABOUT ME</p>
           <p class="bio">I’m a technology-driven student who loves exploring the systems behind the screen. I bring together cybersecurity, AI and machine learning, and a soft spot for retro technology — with a curiosity for how tech can make a positive difference.</p>
           <p class="bio second-line">Along the way, I’ve led my school’s Cyber Crew, interned with IIT Madras’ Centre for Outreach and Digital Education, and helped bring a TEDx event to life.</p>
-          <a class="text-link" href="https://www.linkedin.com/in/pratham-grover-676503307" target="_blank" rel="noreferrer">MORE ABOUT ME <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#team-fit">SEE WHAT I BRING TO A TEAM <span aria-hidden="true">↓</span></a>
         </section>
 
         <aside class="details" aria-label="Highlights and interests">
@@ -68,7 +69,7 @@
             <path d="M155 62h10m90 0h10M210 28v8m0 52v8" opacity=".7" />
           </g>
         </svg>
-        <div class="signal-copy"><span class="section-label"><span>05</span> A MINDSET</span><p>Stay curious.<br><em>Build with purpose.</em></p></div>
+        <div class="signal-copy"><span class="section-label">A MINDSET</span><p>Stay curious.<br><em>Build with purpose.</em></p></div>
         <span class="signal-coordinate">SECURE SYSTEMS · OPEN CURIOSITY</span>
       </div>
 
@@ -80,8 +81,25 @@
         <div class="recognition-item"><span class="recognition-icon">↗</span><div><p class="recognition-title">AI &amp; ML Intern</p><p class="recognition-sub">IIT Madras · 2024</p></div></div>
       </section>
 
+      <section class="team-fit" id="team-fit" aria-labelledby="team-fit-heading">
+        <div class="team-fit-heading">
+          <p class="section-label" id="team-fit-heading"><span>04</span> WHAT I BRING TO A CLUB</p>
+          <p class="team-fit-intro">Pick a strength to see how I could contribute.</p>
+        </div>
+        <div class="fit-options" role="group" aria-label="Explore my team strengths">
+          <button class="fit-option is-selected" type="button" data-fit="leadership" aria-pressed="true">LEADERSHIP</button>
+          <button class="fit-option" type="button" data-fit="security" aria-pressed="false">CYBERSECURITY</button>
+          <button class="fit-option" type="button" data-fit="building" aria-pressed="false">BUILDING &amp; AI</button>
+        </div>
+        <div class="fit-panel" id="fit-panel" aria-live="polite" aria-atomic="true">
+          <span class="fit-panel-mark" aria-hidden="true">01</span>
+          <div><h2 id="fit-title">Lead by taking responsibility</h2><p id="fit-description">I served as Cyber Crew President in 2025–26 after being Tech Head in 2024–25, helping lead my school’s technical club.</p></div>
+        </div>
+        <p class="team-fit-pitch">I’m ready to learn, contribute, and help the team turn good ideas into real projects.</p>
+      </section>
+
       <footer class="card-footer">
-        <div><p class="section-label"><span>04</span> SAY HELLO</p><a class="email-link" href="mailto:prathamgrover399@gmail.com">prathamgrover399@gmail.com <span aria-hidden="true">↗</span></a></div>
+        <div><p class="section-label"><span>05</span> LET’S TALK ABOUT YOUR CLUB</p><div class="email-actions"><a class="email-link" href="mailto:prathamgrover399@gmail.com?subject=Club%20Recruitment">prathamgrover399@gmail.com <span aria-hidden="true">↗</span></a><button class="copy-email" id="copy-email" type="button" data-email="prathamgrover399@gmail.com">COPY EMAIL</button><span class="copy-status" id="copy-status" aria-live="polite"></span></div></div>
         <nav class="socials" aria-label="Contact and social links"><a href="https://www.linkedin.com/in/pratham-grover-676503307" target="_blank" rel="noreferrer">LINKEDIN <span aria-hidden="true">↗</span></a><a href="https://github.com/Prathamgrover15" target="_blank" rel="noreferrer">GITHUB <span aria-hidden="true">↗</span></a><a href="mailto:prathamgrover399@gmail.com">EMAIL <span aria-hidden="true">↗</span></a></nav>
       </footer>
     </section>
